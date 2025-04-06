@@ -330,7 +330,7 @@
         return;
     }
 
-    fetch('http://localhost:5000/auth/signup', {
+    fetch('https://fin-assist-backend.onrender.com/auth/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -385,7 +385,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
 
-    fetch('http://localhost:5000/auth/login', {
+    fetch('https://fin-assist-backend.onrender.com/auth/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
