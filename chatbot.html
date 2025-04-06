@@ -507,7 +507,7 @@
             sendButton.disabled = true;
     
             try {
-                const res = await fetch('http://localhost:5000/chat', {
+                const res = await fetch('https://fin-assist-backend.onrender.com/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message })
@@ -582,7 +582,7 @@
             });
             window.addEventListener('DOMContentLoaded', async () => {
         try {
-            const res = await fetch('http://localhost:5000/user'); // Adjust endpoint as needed
+            const res = await fetch('https://fin-assist-backend.onrender.com/user'); // Adjust endpoint as needed
             const data = await res.json();
             const usernameElement = document.getElementById('username');
             if (data.username && usernameElement) {
